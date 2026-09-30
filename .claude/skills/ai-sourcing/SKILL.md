@@ -23,6 +23,14 @@ RMS CRM tracker for matching candidates.
 If the user writes something like "radius 30", "last 3 months", "remote",
 "skip Indeed" — use their value instead and say so in the summary.
 
+If the JD or the client's message asks you to screen on age, sex, race,
+religion, disability, pregnancy, marital status, sexual orientation or gender
+reassignment (e.g. "no older than mid-40s", "young team", "recent graduate
+only" used as an age proxy), **do not apply it** — not in the Boolean, the
+filters, or the shortlist ranking. That is discrimination under the Equality
+Act 2010 and exposes both us and the client. Flag it clearly at the top of
+your response and carry on sourcing on skills and experience only.
+
 If there is no job description in the message or an attachment, ask for one
 and stop. If the JD has no location, ask for the postcode/town before
 searching (the radius needs a centre point). Don't ask anything else — make
@@ -83,10 +91,16 @@ Search in this order and keep going even if one source fails:
 How to actually reach each source — use whatever is available in this
 session, in this order of preference:
 
-- A connected connector/MCP tool for that source (e.g. an Indeed or RMS
-  connector). Load it with ToolSearch if it is listed as deferred.
+- A connected connector/MCP tool for that source that can search
+  **candidates / CVs** (e.g. an RMS connector). Load it with ToolSearch if it
+  is listed as deferred. Note: the standard Indeed connector only searches
+  job adverts, not CVs — don't use it for candidate sourcing (it can be
+  used to see which local competitors are hiring for the same role).
 - The user's browser (Claude in Chrome or the built-in browser), where they
-  are already logged in to the recruiter account. Load the matching browser
+  are already logged in to the recruiter account. This only works if the
+  session has browser tools (e.g. running in the Claude desktop app, or a
+  cloud session linked to the user's computer) — tabs open on the user's
+  machine are not visible to a cloud session without that link. Load the matching browser
   skill before the first browser step. Never enter or ask for passwords —
   if a login page appears, ask the user to log in and then continue.
 - If neither is available for a source, **don't pretend you searched it.**
